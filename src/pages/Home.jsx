@@ -8,6 +8,7 @@ import FadeContent from "../components/Animation/FadeContent/FadeContent";
 import MoreButton from "../components/MoreButton";
 import Certification from "../sections/Certification";
 import MyProject from "../sections/MyProject";
+import StickySocialNav from "../components/StickyNav";
 
 export default function Home() {
   const [showMore, setShowMore] = React.useState(false);
@@ -40,6 +41,7 @@ export default function Home() {
           />
           <div className="flex flex-col gap-10">
             <ProfileSec />
+            <StickySocialNav />
 
             {!showMore && (
               <FadeContent

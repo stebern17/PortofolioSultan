@@ -66,16 +66,16 @@ export default function MyProject() {
               <h4 className="text-xl font-bold mt-2">{title}</h4>
               <p className="text-sm">{category}</p>
               <p className="text-lg">{desc}</p>
-              {domain !== "#" && (
-                <a
-                  href={domain}
-                  className="mt-2 font-bold bg-gray-400 px-2 py-2 rounded-xl hover:bg-[#00e5ff61] hover:text-white transition-colors duration-300 text-gray-600"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Visit Site
-                </a>
-              )}
+              <a
+                href={domain === "#" ? undefined : domain}
+                className={`mt-2 font-bold bg-gray-400 px-2 py-2 rounded-xl transition-colors duration-300 text-gray-600 
+    hover:bg-[#00e5ff61] hover:text-white
+    ${domain === "#" ? "invisible pointer-events-none" : "visible"}`}
+                rel="noopener noreferrer"
+                target={domain === "#" ? undefined : "_blank"}
+              >
+                Visit Site
+              </a>
             </SpotlightCard>
           ))}
         </div>
