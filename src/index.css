@@ -5,3 +5,18 @@
 body {
   @apply bg-black;
 }
+
+/* Atur lebar scrollbar */
+::-webkit-scrollbar {
+  @apply w-1; /* Tailwind class untuk width 0.5rem */
+}
+
+/* Atur warna dan bentuk thumb */
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-800 rounded;
+}
+
+/* Atur warna track */
+::-webkit-scrollbar-track {
+  @apply bg-black;
+}
