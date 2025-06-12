@@ -6,13 +6,15 @@ import Particles from "../components/Backgrounds/Particles/Particles";
 import { motion, AnimatePresence } from "framer-motion";
 import FadeContent from "../components/Animation/FadeContent/FadeContent";
 import MoreButton from "../components/MoreButton";
+import Certification from "../sections/Certification";
+import MyProject from "../sections/MyProject";
 
 export default function Home() {
   const [showMore, setShowMore] = React.useState(false);
 
   return (
     <>
-      <div className="relative w-full min-h-screen">
+      <div className="relative w-full min-h-screen overflow-x-hidden">
         {/* Particles background */}
         <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none">
           <Particles
@@ -38,6 +40,7 @@ export default function Home() {
           />
           <div className="flex flex-col gap-10">
             <ProfileSec />
+
             {!showMore && (
               <FadeContent
                 blur={true}
@@ -58,8 +61,11 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 20 }}
                   transition={{ duration: 0.6, ease: "easeOut" }}
+                  className="flex flex-col gap-10"
                 >
                   <Experties />
+                  <Certification />
+                  <MyProject />
                 </motion.div>
               )}
             </AnimatePresence>

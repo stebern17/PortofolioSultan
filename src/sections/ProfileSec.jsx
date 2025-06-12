@@ -31,6 +31,13 @@ export default function ProfileSec() {
             initialOpacity={0}
           >
             <TrueFocus />
+            <div>
+              <ul className="list-disc flex justify-center text-white gap-10 font-mono text-2xl mt-5">
+                <li>Remote</li>
+                <li>On Site</li>
+                <li>Based in Yogyakarta</li>
+              </ul>
+            </div>
           </Fade>
         </div>
         <Fade
