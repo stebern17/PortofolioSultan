@@ -39,6 +39,21 @@ export default function ProfileSec() {
               </ul>
             </div>
           </Fade>
+          <Fade
+            blur={true}
+            duration={2000}
+            easing="ease-in-out"
+            initialOpacity={0}
+            className="bg-gray-300 max-w-[50%] backdrop-blur-md bg-opacity-20 rounded-full text-center text-2xl text-white font-mono font-semibold px-6 py-3 hover:bg-opacity-30 transition duration-500 ease-in-out mx-auto mt-2 hover:scale-105"
+          >
+            <a
+              href="https://drive.google.com/file/d/1A8jTYngYXWqqJLMTR4ts3R2o6jCoejfU/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download Resume
+            </a>
+          </Fade>
         </div>
         <Fade
           blur={true}
@@ -46,11 +61,14 @@ export default function ProfileSec() {
           easing="ease-in-out"
           initialOpacity={0}
         >
-          <PixelCard variant="blue">
+          <PixelCard
+            variant="blue"
+            className="relative bg-gray-600 bg-opacity-30 backdrop-blur-md"
+          >
             <img
               src={Avatar}
               alt="Foto"
-              className="absolute bottom-0 left-1/2 transform -translate-x-1/2"
+              className="absolute bottom-0 w-52 h-auto object-contain"
             />
           </PixelCard>
         </Fade>

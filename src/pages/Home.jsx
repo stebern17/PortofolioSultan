@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ProfileSec from "../sections/ProfileSec";
 import Aurora from "../components/Aurora";
 import Experties from "../sections/Experties";
@@ -8,7 +8,33 @@ import FadeContent from "../components/Animation/FadeContent/FadeContent";
 import MoreButton from "../components/MoreButton";
 import Certification from "../sections/Certification";
 import MyProject from "../sections/MyProject";
+import Services from "../sections/Services";
 import StickySocialNav from "../components/StickyNav";
+
+const sectionVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: "easeOut" },
+  },
+};
+
+function AnimatedSection({ children }) {
+  const [isInView, setIsInView] = useState(false);
+  return (
+    <motion.div
+      variants={sectionVariants}
+      initial="hidden"
+      animate={isInView ? "visible" : "hidden"}
+      onViewportEnter={() => setIsInView(true)}
+      onViewportLeave={() => setIsInView(false)}
+      viewport={{ amount: 0.5 }}
+    >
+      {children}
+    </motion.div>
+  );
+}
 
 export default function Home() {
   const [showMore, setShowMore] = React.useState(false);
@@ -16,7 +42,6 @@ export default function Home() {
   return (
     <>
       <div className="relative w-full min-h-screen overflow-x-hidden">
-        {/* Particles background */}
         <div className="absolute top-0 left-0 w-full h-full z-0 pointer-events-none">
           <Particles
             particleColors={["A7E6FF", "3ABEF9"]}
@@ -29,8 +54,6 @@ export default function Home() {
             disableRotation={false}
           />
         </div>
-
-        {/* Your content goes here */}
         <div className="relative z-10 min-h-screen">
           <Aurora
             colorStops={["#050C9C", "#3572EF", "#3ABEF9", "#A7E6FF"]}
@@ -59,15 +82,26 @@ export default function Home() {
             <AnimatePresence>
               {showMore && (
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 20 }}
-                  transition={{ duration: 0.6, ease: "easeOut" }}
-                  className="flex flex-col gap-10"
+                  initial="hidden"
+                  animate="visible"
+                  exit="hidden"
+                  className="flex flex-col gap-10 mb-24"
                 >
-                  <Experties />
-                  <Certification />
-                  <MyProject />
+                  <AnimatedSection>
+                    <Experties />
+                  </AnimatedSection>
+
+                  <AnimatedSection>
+                    <Certification />
+                  </AnimatedSection>
+
+                  <AnimatedSection>
+                    <MyProject />
+                  </AnimatedSection>
+
+                  <AnimatedSection>
+                    <Services />
+                  </AnimatedSection>
                 </motion.div>
               )}
             </AnimatePresence>

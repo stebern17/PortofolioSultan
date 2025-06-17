@@ -14,7 +14,7 @@ export default function Certification() {
               date: "November 2023 - No Expiry",
             },
             {
-              title: "Front End Development",
+              title: "Neuversity Front End Development",
               link: "https://credsverse.com/credentials/ce570824-030b-4f1f-8cb4-fc3d12d6b3c7?preview=1",
               date: "December 2024 - No Expiry",
             },

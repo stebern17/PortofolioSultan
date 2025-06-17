@@ -9,7 +9,7 @@ export default function MyProject() {
   return (
     <>
       <div className="container text-white font-mono">
-        <h3 className="text-4xl font-extrabold mb-6 text-center">My Project</h3>
+        <h3 className="text-4xl font-extrabold mb-6">My Project</h3>
         <div className="overflow-x-auto scroll-smooth snap-x flex space-x-4">
           {[
             {
@@ -68,8 +68,8 @@ export default function MyProject() {
               <p className="text-lg">{desc}</p>
               <a
                 href={domain === "#" ? undefined : domain}
-                className={`mt-2 font-bold bg-gray-400 px-2 py-2 rounded-xl transition-colors duration-300 text-gray-600 
-    hover:bg-[#00e5ff61] hover:text-white
+                className={`mt-2 font-bold px-4 py-2 rounded-xl transition duration-300
+    bg-gray-400 bg-opacity-10 backdrop-blur-md border border-white border-opacity-20 hover:bg-opacity-30 hover:bg-[#00e5ff33] hover:scale-105
     ${domain === "#" ? "invisible pointer-events-none" : "visible"}`}
                 rel="noopener noreferrer"
                 target={domain === "#" ? undefined : "_blank"}
