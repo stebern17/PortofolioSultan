@@ -11,8 +11,8 @@ export default function ProfileSec() {
   };
   return (
     <>
-      <div className="container flex justify-center items-center gap-4">
-        <div className="grid grid-cols-1 gap-4">
+      <div className="container grid grid-cols-1 md:flex justify-center items-center gap-4">
+        <div className="grid grid-cols-1 gap-4 order-2 md:order-1">
           <SplitText
             text="Hello, My name is Sultan Faaiz!"
             className="text-5xl font-semibold text-center text-white font-mono"
@@ -31,7 +31,7 @@ export default function ProfileSec() {
             initialOpacity={0}
           >
             <TrueFocus />
-            <div>
+            <div className="ms-5 md:ms-0">
               <ul className="list-disc flex justify-center text-white gap-10 font-mono text-2xl mt-5">
                 <li>Remote</li>
                 <li>On Site</li>
@@ -60,6 +60,7 @@ export default function ProfileSec() {
           duration={2000}
           easing="ease-in-out"
           initialOpacity={0}
+          className="grid order-1 mx-auto md:order-2"
         >
           <PixelCard
             variant="blue"

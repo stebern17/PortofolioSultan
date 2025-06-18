@@ -5,7 +5,9 @@ export default function Certification() {
   return (
     <>
       <div className="container text-white font-mono">
-        <h3 className="text-4xl font-extrabold">Certification</h3>
+        <h3 className="text-4xl text-center md:text-start font-extrabold">
+          Certification
+        </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:flex lg:flex gap-5 mt-5 items-stretch">
           {[
             {
