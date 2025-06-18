@@ -7,7 +7,9 @@ export default function Services() {
   return (
     <>
       <div className="container text-white font-mono">
-        <h3 className="text-4xl font-extrabold mb-6">What Can I Do?</h3>
+        <h3 className="text-4xl font-extrabold text-center md:text-start mb-6">
+          What Can I Do?
+        </h3>
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
