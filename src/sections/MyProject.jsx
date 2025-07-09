@@ -29,9 +29,9 @@ export default function MyProject() {
           {
             title: "Ordering Sysytem Ledok Sambi Ecopark",
             category: "Web Fullstack",
-            desc: "A web-based ordering system for Ledok Sambi Ecopark, integrating both frontend and backend functionalities.",
+            desc: "A web-based ordering system for Ledok Sambi Ecopark, integrating both frontend and backend functionalities. (Mobile Layout)",
             src: LedokSambi,
-            domain: "#",
+            domain: "http://31.97.109.14/1",
           },
           {
             title: "Mental Health Care",
