@@ -29,7 +29,7 @@ function AnimatedSection({ children }) {
       animate={isInView ? "visible" : "hidden"}
       onViewportEnter={() => setIsInView(true)}
       onViewportLeave={() => setIsInView(false)}
-      viewport={{ amount: 0.5 }}
+      viewport={{ amount: 0.3 }}
     >
       {children}
     </motion.div>

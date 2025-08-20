@@ -31,7 +31,7 @@ export default function Certification() {
               key={idx}
               target="_blank"
               rel="noopener noreferrer"
-              className="h-full w-full"
+              className="h-full w-full transform transition duration-300 hover:scale-105"
             >
               <SpotlightCard
                 className="custom-spotlight-card font-mono text-center h-full w-full flex flex-col items-center justify-center"
