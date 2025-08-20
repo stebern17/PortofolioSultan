@@ -32,7 +32,7 @@ export default function ProfileSec() {
           >
             <TrueFocus />
             <div className="ms-5 md:ms-0">
-              <ul className="list-disc flex justify-center text-white gap-10 font-mono text-2xl mt-5">
+              <ul className="list-disc flex justify-center text-white gap-10 font-mono text-sm md:text-2xl mt-5">
                 <li>Remote</li>
                 <li>On Site</li>
                 <li>Based in Yogyakarta</li>
@@ -44,7 +44,7 @@ export default function ProfileSec() {
             duration={2000}
             easing="ease-in-out"
             initialOpacity={0}
-            className="bg-gray-300 max-w-[50%] backdrop-blur-md bg-opacity-20 rounded-full text-center text-2xl text-white font-mono font-semibold px-6 py-3 hover:bg-opacity-30 transition duration-500 ease-in-out mx-auto mt-2 hover:scale-105"
+            className="bg-gray-300 w-fit py-3 px-6 backdrop-blur-md bg-opacity-20 rounded-full text-center text-xl text-white font-mono font-semibold hover:bg-opacity-30 transition duration-500 ease-in-out mx-auto mt-2 hover:scale-105 md:text-2xl"
           >
             <a
               href="https://drive.google.com/file/d/1A8jTYngYXWqqJLMTR4ts3R2o6jCoejfU/view?usp=sharing"

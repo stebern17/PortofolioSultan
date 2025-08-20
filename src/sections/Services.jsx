@@ -28,7 +28,7 @@ export default function Services() {
             ].map(({ title, desc, spotlightColor, image }, idx) => (
               <SpotlightCard
                 key={idx}
-                className="custom-spotlight-card font-mono text-center h-full w-full items-center"
+                className="custom-spotlight-card font-mono text-center h-[75vh] md:h-full w-full items-center"
                 spotlightColor={spotlightColor}
               >
                 <img src={image} alt="serviceimg" className="size-24 mx-auto" />
