@@ -6,7 +6,7 @@ import WebDevService from "../assets/webdevelopment.svg";
 export default function Services() {
   return (
     <>
-      <div className="container text-white font-mono">
+      <div className="container text-white font-mono md:mb-24">
         <h3 className="text-4xl font-extrabold text-center md:text-start mb-6">
           What Can I Do?
         </h3>
@@ -28,7 +28,7 @@ export default function Services() {
             ].map(({ title, desc, spotlightColor, image }, idx) => (
               <SpotlightCard
                 key={idx}
-                className="custom-spotlight-card font-mono text-center h-[75vh] md:h-full w-full items-center"
+                className="custom-spotlight-card font-mono text-center h-[600px] md:h-full w-full items-centerr"
                 spotlightColor={spotlightColor}
               >
                 <img src={image} alt="serviceimg" className="size-24 mx-auto" />

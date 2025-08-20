@@ -85,7 +85,7 @@ export default function Home() {
                   initial="hidden"
                   animate="visible"
                   exit="hidden"
-                  className="flex flex-col gap-10 mb-24"
+                  className="flex flex-col gap-5"
                 >
                   <AnimatedSection>
                     <Experties />
