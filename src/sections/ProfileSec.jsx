@@ -31,12 +31,18 @@ export default function ProfileSec() {
             initialOpacity={0}
           >
             <TrueFocus />
-            <div className="ms-5 md:ms-0">
-              <ul className="list-disc flex justify-center text-white gap-10 font-mono text-sm md:text-2xl mt-5">
+            <div className="ms-5 md:ms-0 text-white font-mono text-sm md:text-2xl flex flex-col gap-2">
+              <ul className="list-disc flex justify-center  gap-10  mt-5">
                 <li>Remote</li>
                 <li>On Site</li>
                 <li>Based in Yogyakarta</li>
               </ul>
+              <p className="text-center">
+                Currently Working at{" "}
+                <span className="font-sans font-extrabold text-3xl text-[#E4004B] drop-shadow-[0_0_20px_#ff6060]">
+                  ID Maks
+                </span>
+              </p>
             </div>
           </Fade>
           <Fade

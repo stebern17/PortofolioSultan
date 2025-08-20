@@ -62,6 +62,7 @@ export default function Home() {
             speed={0.8}
             className="absolute inset-0 z-0"
           />
+
           <div className="flex flex-col gap-5 mb-24 md:mb-0">
             <ProfileSec />
             <StickySocialNav />
