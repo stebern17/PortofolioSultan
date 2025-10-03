@@ -32,7 +32,7 @@ export default function MyProject() {
             category: "Web Fullstack",
             desc: "A web-based ordering system for Ledok Sambi Ecopark, integrating both frontend and backend functionalities. (Mobile Layout)",
             src: LedokSambi,
-            domain: "http://31.97.109.14/1",
+            domain: "https://orderingledoksambi.shop/1",
             github:
               "https://github.com/stebern17/SistemPemesanan_LedokSambiEcopark.git",
           },
@@ -41,7 +41,7 @@ export default function MyProject() {
             category: "Web Frontend",
             desc: "A frontend web application focused on mental health care, providing resources and support.",
             src: MentalHealth,
-            domain: "https://sultan.neuversity.id/",
+            domain: "https://mentalhealth.sultanjughead.dev/",
             github:
               "https://github.com/stebern17/FinalProject-Mental-Health-Awareness.git",
           },
