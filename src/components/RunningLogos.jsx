@@ -89,7 +89,7 @@ export default function RunningLogos() {
               <img
                 src={logo.src}
                 alt={logo.alt}
-                className="h-24 w-auto object-contain"
+                className="w-24 h-auto object-contain"
               />
             </motion.button>
           ))}
