@@ -101,8 +101,12 @@ export default function MyProject() {
 
       {/* Grid Project */}
       <motion.div
+        key={activeCategory} // 👈 paksa re-render tiap filter berubah
         layout
-        className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 md:gap-6"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.4 }}
+        className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 md:gap-6 will-change-transform"
       >
         <AnimatePresence mode="popLayout">
           {filteredProjects.map(
