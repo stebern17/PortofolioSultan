@@ -4,7 +4,7 @@ import csslogo from "../assets/csslogo.png";
 import reactlogo from "../assets/reactlogo.png";
 import bslogo from "../assets/bootstraplogo.svg";
 import htmllogo from "../assets/htmllogo.png";
-import figmalogo from "../assets/figmalogo.png";
+import figmalogo from "../assets/Figmalogo.png";
 import tailwindlogo from "../assets/tailwindlogo.svg";
 import sasslogo from "../assets/sasslogo.png";
 import nextjslogo from "../assets/nextjs.png";
