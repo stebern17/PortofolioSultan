@@ -1,28 +1,16 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SpotlightCard from "../components/SpotlightCard/SpotlightCard";
 import LedokSambi from "../assets/LedokSambi.png";
 import MentalHealth from "../assets/MentalHealthCare.png";
 import Kootin from "../assets/Kootin.png";
 import Marica from "../assets/marica.png";
-import GejossCash from "../assets/GC.png";
 import InotekNichiha from "../assets/InotekNichiha.png";
 import IDMaks from "../assets/IDMaks.png";
-import Jinjam from "../assets/Jinjam.png";
 import { FaGithub, FaGlobe, FaFigma } from "react-icons/fa";
 
 export default function MyProject() {
-  const [isMdUp, setIsMdUp] = useState(false);
   const [activeCategory, setActiveCategory] = useState("All");
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsMdUp(window.innerWidth >= 768);
-    };
-    checkScreenSize();
-    window.addEventListener("resize", checkScreenSize);
-    return () => window.removeEventListener("resize", checkScreenSize);
-  }, []);
 
   const projects = [
     {
@@ -82,7 +70,6 @@ export default function MyProject() {
       ? projects
       : projects.filter((p) => p.category === activeCategory);
 
-  // Variants untuk animasi setiap card
   const cardVariants = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0 },
@@ -115,15 +102,11 @@ export default function MyProject() {
       {/* Grid Project */}
       <motion.div
         layout
-        className={`grid ${
-          isMdUp
-            ? "md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6"
-            : "grid-cols-1 gap-4"
-        }`}
+        className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 md:gap-6"
       >
         <AnimatePresence mode="popLayout">
           {filteredProjects.map(
-            ({ title, src, category, desc, domain, github, figma }, idx) => (
+            ({ title, src, category, desc, domain, github, figma }) => (
               <motion.div
                 key={title}
                 variants={cardVariants}
