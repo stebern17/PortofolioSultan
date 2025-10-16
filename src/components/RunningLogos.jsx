@@ -4,20 +4,24 @@ import csslogo from "../assets/csslogo.png";
 import reactlogo from "../assets/reactlogo.png";
 import bslogo from "../assets/bootstraplogo.svg";
 import htmllogo from "../assets/htmllogo.png";
+import figmalogo from "../assets/figmalogo.png";
 import tailwindlogo from "../assets/tailwindlogo.svg";
 import sasslogo from "../assets/sasslogo.png";
+import nextjslogo from "../assets/nextjs.png";
 import phplogo from "../assets/phplogo.png";
 import laravelogo from "../assets/laravellogo.png";
 
 const logos = [
+  { src: reactlogo, alt: "React Logo" },
+  { src: nextjslogo, alt: "Next.js Logo" },
+  { src: phplogo, alt: "PHP Logo" },
+  { src: laravelogo, alt: "Laravel Logo" },
   { src: htmllogo, alt: "HTML Logo" },
   { src: csslogo, alt: "CSS Logo" },
-  { src: reactlogo, alt: "React Logo" },
   { src: bslogo, alt: "Bootstrap Logo" },
   { src: tailwindlogo, alt: "Tailwind CSS Logo" },
   { src: sasslogo, alt: "Sass Logo" },
-  { src: phplogo, alt: "PHP Logo" },
-  { src: laravelogo, alt: "Laravel Logo" },
+  { src: figmalogo, alt: "Figma Logo" },
 ];
 
 export default function RunningLogos() {
@@ -52,7 +56,7 @@ export default function RunningLogos() {
               <img
                 src={logo.src}
                 alt={logo.alt}
-                className="h-24 w-auto object-contain"
+                className="w-24 h-auto object-contain"
               />
             </motion.button>
           ))}

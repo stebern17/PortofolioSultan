@@ -15,13 +15,13 @@ export default function Services() {
             {[
               {
                 title: "Web Development",
-                desc: "Building responsive and dynamic web applications that leverage modern technologies and best practices to create seamless, user-friendly experiences across all devices.",
+                desc: "Crafting high-performance, scalable, and interactive web applications using modern frameworks and clean architecture. Every project is built to be fast, secure, and tailored to deliver exceptional user experiences that align with your business goals.",
                 spotlightColor: "rgba(0, 229, 255, 0.2)",
                 image: WebDevService,
               },
               {
-                title: "UI/UX Design",
-                desc: "Creating user-friendly interfaces by carefully considering usability principles, accessibility standards, and visual design elements to enhance the overall user experience, ensuring that every interaction is intuitive, efficient, and delightful for diverse users across different devices and platforms.",
+                title: "Responsive Design",
+                desc: "Creating adaptable, visually consistent interfaces that look and perform beautifully on any device. With a balance of usability, accessibility, and modern aesthetics, every layout ensures your brand stays engaging from desktop to mobile.",
                 spotlightColor: "rgba(255, 105, 180, 0.2)",
                 image: UiuxService,
               },

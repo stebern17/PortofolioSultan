@@ -1,4 +1,3 @@
-import React from "react";
 import SplitText from "../components/SplitText";
 import PixelCard from "../components/PixelCard/PixelCard";
 import Avatar from "../assets/Avatar.png";
@@ -39,8 +38,8 @@ export default function ProfileSec() {
               </ul>
               <p className="text-center">
                 Currently Working at{" "}
-                <span className="font-sans font-extrabold text-3xl text-[#E4004B] drop-shadow-[0_0_20px_#ff6060]">
-                  ID Maks
+                <span className="font-sans font-extrabold text-3xl text-pink-500 drop-shadow-[0_0_20px_#ff6060]">
+                  NBS
                 </span>
               </p>
             </div>
