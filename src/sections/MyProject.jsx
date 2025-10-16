@@ -116,7 +116,9 @@ export default function MyProject() {
       <motion.div
         layout
         className={`grid ${
-          isMdUp ? "md:grid-cols-2 lg:grid-cols-3 gap-6" : "grid-cols-1 gap-4"
+          isMdUp
+            ? "md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6"
+            : "grid-cols-1 gap-4"
         }`}
       >
         <AnimatePresence mode="popLayout">
