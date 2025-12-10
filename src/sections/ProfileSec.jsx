@@ -38,8 +38,8 @@ export default function ProfileSec() {
               </ul>
               <p className="text-center">
                 Currently Working at{" "}
-                <span className="font-sans font-extrabold text-3xl text-pink-500 drop-shadow-[0_0_20px_#ff6060]">
-                  NBS
+                <span className="font-sans font-extrabold text-3xl text-orange-400 drop-shadow-[0_0_20px_#ff6060]">
+                  SOLVEIN
                 </span>
               </p>
             </div>
