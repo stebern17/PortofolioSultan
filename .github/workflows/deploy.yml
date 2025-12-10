@@ -31,4 +31,4 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "dist/*"
-          target: "/var/www/sultanjughead.dev/dist"
+          target: "/var/www/sultanjughead.dev/"
